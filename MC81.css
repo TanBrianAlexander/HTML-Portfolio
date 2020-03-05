@@ -50,6 +50,32 @@
   .button:hover {
     background-color: #333;
   }
+  @font-face {
+    font-family: 'hondafont';
+    src: url(ttf/ethnocentric.ttf);
+  }
+  @font-face {
+    font-family: 'typer';
+    src: url(ttf/vendetta.otf);
+  }
+  @font-face {
+    font-family: 'typer2';
+    src: url(ttf/nasalization-rg.ttf);
+  }
+  .headfont3{
+    font-family: typer2;
+    font-weight: bold;
+  }
+  
+  .headfont {
+    font-family: typer;
+    font-weight: bold;
+    }
+  .headfont2{
+    font-family: hondafont;
+    font-weight: bold;
+  }
+
   
   @media screen and (max-width: 650px) {
     .column {

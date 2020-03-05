@@ -11,6 +11,41 @@
   .header h1 {
     font-size: 40px;
   }
+  .headimage {
+    max-width: 50%;
+  }
+  @font-face {
+    font-family: 'hondafont';
+    src: url(ttf/ethnocentric.ttf);
+  }
+  @font-face {
+    font-family: 'typer';
+    src: url(ttf/vendetta.otf);
+  }
+  @font-face {
+    font-family: 'typer2';
+    src: url(ttf/nasalization-rg.ttf);
+  }
+  .headfont {
+    font-family: typer;
+    font-weight: bold;
+    color: crimson;
+    }
+  .headfont2{
+    font-family: hondafont;
+    font-weight: bold;
+    
+  }
+  .headfont3{
+    font-family: typer2;
+    font-weight: bold;
+  }
+  .headfont32{
+    font-family: typer2;
+    font-weight: bold;
+    color: crimson;
+    -webkit-text-stroke: 1px#333;
+  }
   
   /* Style the top navigation bar */
   .navbar {
@@ -33,4 +68,66 @@
     text-align: center;
     background: #333;
     color: white;
+  }
+
+  /* The drop down effect on the image*/
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: darkred;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    opacity: 0.75;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .bg {
+    /* The image used */
+    background-image: url("cfd.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .masthead {
+    height: 47vh;
+   
+    background-image: url('cfd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
