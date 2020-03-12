@@ -12,6 +12,7 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+   
   }
   
   .about-section {
@@ -22,7 +23,9 @@
   }
   
   .container {
-    padding: 0 16px;
+    padding: 15 16px;
+    justify-content: center;
+    align-self: center;
   }
   
   .container::after, .row::after {
@@ -62,6 +65,14 @@
     font-family: 'typer2';
     src: url(ttf/nasalization-rg.ttf);
   }
+  @font-face {
+    font-family: 'typer3';
+    src: url(ttf/GeosansLight.ttf);
+  }
+  @font-face {
+    font-family: 'typer4';
+    src: url(ttf/Heading-Pro-ExtraBold-trial.ttf);
+  }
   .headfont3{
     font-family: typer2;
     font-weight: bold;
@@ -75,12 +86,30 @@
     font-family: hondafont;
     font-weight: bold;
   }
+  .headfont4{
+    font-family: typer3;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .headfont5{
+    font-family: typer4;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
 
   
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
       display: block;
+    }
+   
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
     }
   }
   
